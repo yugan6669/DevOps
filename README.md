@@ -1,4 +1,4 @@
-# DevOps    = Development + OPerations
+# DevOps    =  Dev  +  Ops   =   Development + Operations
  
 
 
