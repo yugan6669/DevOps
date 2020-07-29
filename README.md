@@ -1,5 +1,5 @@
-# DevOps
-
+# DevOps    = Development + OPerations
+ 
 
 
 
@@ -171,8 +171,8 @@ $ansible-playbook -i hosts devstack.yml
 
 
 
-opsstack
-# webapps
+
+# opsstack
 This project implemented to touch and feel 3-tier Distributed/Containerized  webapp communication flow 
 
 # Phase 0: lauch ec2 instance and named as "Sandbox"
