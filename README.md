@@ -44,7 +44,7 @@ step 3: run script
 $sudo sh setup.sh
 
 
-# Phase 1: Build custome AMI image using "Packer"
+# Phase 1: Build custom AMI image using "Packer"
 
 step 1: clone repo
 
@@ -171,7 +171,8 @@ $ansible-playbook -i hosts devstack.yml
 
 
 
-# opsstack
+# OpsStack
+
 This project implemented to touch and feel 3-tier Distributed/Containerized  webapp communication flow 
 
 
