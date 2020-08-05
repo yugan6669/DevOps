@@ -43,8 +43,12 @@ step 3: run script
 
 $sudo sh setup.sh
 
+step 4: Configuring AWS CLI
 
-# Phase 1: Build custom AMI image using "Packer"
+$aws configure
+
+
+# Phase 1: Build custom AMI using "Packer"
 
 step 1: clone repo
 
