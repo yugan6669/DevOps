@@ -7,33 +7,17 @@ This project is implemented to touch and feel DevOps world
 
 # Phase 0: lauch ec2 instance and named as "Sandbox"
 
-step 1: Launch EC2 instance from the AWS Console
+Step 1: Launch EC2 instance from the AWS Console
 
-step 2: Logged into machine and do the below steps
+Step 2: Logged into machine and install the necessary packages
 
+$git clone https://github.com/krishnamaram2/deployer.git
 
+$cd deployer/src/sandbox
 
-step 2: install packages
+$python sandbox-setup.py
 
-$vi setup.sh
-
-yum update -y && yum upgrade -y
-
-yum install git -y && yum install wget -y && yum install unzip -y && yum install curl -y && yum install epel-release -y
-
-wget https://releases.hashicorp.com/packer/1.5.5/packer_1.5.5_linux_amd64.zip && unzip packer_1.5.5_linux_amd64.zip && mv packer /bin/ && rm -rf ./packer*
-
-wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip && unzip terraform_0.12.24_linux_amd64.zip && mv terraform /bin/ && rm -rf ./terraform* 
-
-sudo cp ./ansible.repo /etc/yum.repos.d/
-
-yum install ansible -y
-
-step 3: run script
-
-$sudo sh setup.sh
-
-step 4: Configuring AWS CLI
+Step 3: Configuring AWS CLI
 
 $aws configure
 
