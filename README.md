@@ -55,45 +55,11 @@ $cd Configuration_Manager/src/plays
 
 $ansible-playbook -i hosts opsstack.yml
 
-
-# DevStack
-
-this project is implemented to touch and feel CICD pipeline
-
-# Phase 3: Installing and configure using "Ansible"
-
-
-Step 0: add public keys
-
-
-step 1: clone repo
-
-$git clone https://github.com/krishnamaram2/Configuration_Manager.git
-
-Step 2:
-
-$cd Configuration_Manager/src/plays
-
 $ansible-playbook -i hosts devstack.yml
 
-
-
-# WebApp
-
-this project is implemented to touch and feel CICD pipeline
-
-# Phase 3: Installing and configure using "Ansible"
-
-
-Step 0: add public keys
-
-
-step 1: clone repo
-
-$git clone https://github.com/krishnamaram2/Configuration_Manager.git
-
-Step 2:
-
-$cd Configuration_Manager/src/plays
-
 $ansible-playbook -i hosts webapp.yml
+
+
+
+
+
