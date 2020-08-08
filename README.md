@@ -44,6 +44,14 @@ This project implemented to touch and feel 3-tier Distributed/Containerized  web
 
 Step 0: add public keys
 
+ #!/bin/bash
+ 
+ ssh-keygen -q -t rsa -N '' -f /home/centos/.ssh/id_rsa <<<y 2>&1 >/dev/null
+
+ cat /home/centos/.ssh/id_rsa.pub >> /home/centos/.ssh/authorized_keys
+
+ ssh -o StrictHostKeyChecking=no centos@localhost
+
 
 step 1: clone repo
 
