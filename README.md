@@ -11,10 +11,12 @@ Step 1: Launch EC2 instance from the AWS Console
 
 Step 2: Logging into EC2 instance and clone the git repo
 
+$sudo yum install git -y
+
 $git clone https://github.com/krishnamaram2/deployer.git
 
 Step 3:
-$python ./src/sandbox/sandbox.py
+$python ./deployer/src/sandbox/sandbox.py
 
 
 
@@ -30,7 +32,7 @@ $git clone https://github.com/krishnamaram2/deployer.git
 
 Step 3: execute command 
 
-$python ./src/packer/packer.py
+$python ./deployer/src/packer/packer.py
 
 
 
