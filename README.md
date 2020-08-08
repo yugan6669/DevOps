@@ -1,58 +1,37 @@
 # DevOps    =  Dev  +  Ops   =   Development + Operations
  
-This project is implemented to touch and feel DevOps world
+This project is implemented to touch and feel the DevOps Pipeline
 
 
 # Pre-Requisites
 
-# Phase 0: lauch ec2 instance and named as "Sandbox"
+# Phase 0: launch ec2 instance to build Infra and named as "Sandbox"
 
 Step 1: Launch EC2 instance from the AWS Console
 
-Step 2: Logged into machine and install the necessary packages
+Step 2: Logging into EC2 instance and clone the git repo
 
 $git clone https://github.com/krishnamaram2/deployer.git
 
-$cd deployer/src/sandbox
+Step 3:
+$python ./src/sandbox/sandbox.py
 
-$python sandbox-setup.py
-
-Step 3: Configuring AWS CLI
-
-$aws configure
 
 
 # Phase 1: Build custom AMI using "Packer"
 
-step 1: clone repo
+Step 1: Configuring AWS CLI
 
-$git clone https://github.com/krishnamaram2/Image_Builder.git
+$aws configure
 
-step 2: enter src directory
+Step 2:clone the git repo
 
-$cd Image_Builder/src
+$git clone https://github.com/krishnamaram2/deployer.git
 
-step 3: enter access key and secret key
+Step 3: execute command 
 
-$vi variables.json
+$python ./src/packer/packer.py
 
-{
-
-"aws_access_key": "",
-
-"aws_secret_key": "",
-
-"region": "us-east-1"
-
-}
-
-Step 4: validate syntax
-
-$packer validate -var-file=variables.json builders.json
-
-Step 5: Build custome AMI
-
-$packer build -var-file=variables.json builders.json
 
 
 # Phase 2: Build infrastructure using "Terraform"
