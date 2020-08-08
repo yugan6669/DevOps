@@ -34,13 +34,7 @@ $python ./deployer/src/terraform/terraform.py
 
 
 
-# OpsStack
-
-This project implemented to touch and feel 3-tier Distributed/Containerized  webapp communication flow 
-
-
 # Phase 3: Installing and configure using "Ansible"
-
 
 Step 0: add public keys
 
