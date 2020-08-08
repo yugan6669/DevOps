@@ -7,21 +7,11 @@ This project is implemented to touch and feel DevOps world
 
 # Phase 0: lauch ec2 instance and named as "Sandbox"
 
-step 0: login to sandbox instance
+step 1: Launch EC2 instance from the AWS Console
 
-step 1: repo file
+step 2: Logged into machine and do the below steps
 
-$vi ansible.repo
 
-[Ansible]
-
-name = ansible
-
-baseurl = https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/
-
-enabled = 1
-
-gpgcheck = 0
 
 step 2: install packages
 
