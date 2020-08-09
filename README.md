@@ -30,6 +30,6 @@ $python ./deployer/src/packer/packer.py
 $python ./deployer/src/terraform/terraform.py
 
 
-# Phase 3: Login to machine after terraform provisioning and run the playbooks as below
+# Phase 3: Run the Playbooks using Ansible 
 
 $python ./deployer/src/ansible/ansible-playbooks.py
