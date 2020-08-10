@@ -32,4 +32,7 @@ $python ./deployer/src/terraform/infra_manager.py
 
 # Phase 3: Run the Playbooks using Ansible 
 
+
+$python ./deployer/src/ssh/ssh_keys.py
+
 $python ./deployer/src/ansible/play_books.py
