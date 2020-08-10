@@ -17,19 +17,19 @@ $python ./deployer/src/sandbox/sandbox.py
 
 Step 3: Configuring AWS CLI
 
-$python ./deployer/src/aws/aws-config.py
+$python ./deployer/src/aws/aws_config.py
 
 
 # Phase 1: Build custom AMI using "Packer"
 
-$python ./deployer/src/packer/packer.py
+$python ./deployer/src/packer/ami_builder.py
 
 
 # Phase 2: Build infrastructure using "Terraform"
 
-$python ./deployer/src/terraform/terraform.py
+$python ./deployer/src/terraform/infra_manager.py
 
 
 # Phase 3: Run the Playbooks using Ansible 
 
-$python ./deployer/src/ansible/ansible-playbooks.py
+$python ./deployer/src/ansible/play_books.py
