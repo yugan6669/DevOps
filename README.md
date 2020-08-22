@@ -22,7 +22,7 @@ $python ~/deployer/src/aws_config.py
 
 # Phase 1: Build custom AMI using "Packer"
 
-$python ./deployer/src/packer/ami_builder.py
+$python ./deployer/src/packer/image_builder.py
 
 
 # Phase 2: Build infrastructure using "Terraform"
