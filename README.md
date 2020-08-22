@@ -13,11 +13,11 @@ $sudo git clone https://github.com/krishnamaram2/deployer.git
 
 Step 2: Install all the necessary packages  
 
-$python ./deployer/src/sandbox/sandbox_setup.py
+$python ./deployer/src/sandbox/sandbox.py
 
 Step 3: Configuring AWS CLI
 
-$python ./deployer/src/aws/aws_config.py
+$python ./deployer/src/aws_config.py
 
 
 # Phase 1: Build custom AMI using "Packer"
