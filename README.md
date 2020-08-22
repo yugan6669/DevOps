@@ -27,7 +27,7 @@ $python ./deployer/src/packer/image_builder.py
 
 # Phase 2: Build infrastructure using "Terraform"
 
-$python ./deployer/src/terraform/infra_manager.py
+$python ./deployer/src/terraform/infrastructure_manager.py
 
 
 # Phase 3: Run the Playbooks using Ansible 
