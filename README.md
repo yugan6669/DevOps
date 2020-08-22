@@ -13,7 +13,9 @@ $sudo git clone https://github.com/krishnamaram2/deployer.git
 
 Step 2: Install all the necessary packages  
 
-$python ./deployer/src/sandbox/sandbox.py
+$cd deployer/src/sandbox
+
+$python sandbox.py
 
 Step 3: Configuring AWS CLI
 
