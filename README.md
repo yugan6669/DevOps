@@ -19,7 +19,7 @@ $python sandbox.py
 
 Step 3: Configuring AWS CLI
 
-$python ./deployer/src/aws_config.py
+$python ~/deployer/src/aws_config.py
 
 
 # Phase 1: Build custom AMI using "Packer"
